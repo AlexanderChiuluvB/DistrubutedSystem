@@ -11,6 +11,9 @@ import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
 
+/**
+ * 这个则是将各元素计算平方，并转为double，最终打印结果的中位数、最大值、最小值、平均值等
+ */
 public class mapDouble {
     public static void main(String[] args) {
 
