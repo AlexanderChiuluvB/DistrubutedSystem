@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e109366d-1478-45fd-9aeb-3a1c9ca7f570" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/combineByKey/ScoreDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/combineByKey/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/foldByKey/foldByKey.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/combineByKey/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/combineByKey/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,11 +67,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/combineByKey/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
-              <caret line="75" column="5" lean-forward="true" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
+            <state relative-caret-position="651">
+              <caret line="74" column="21" lean-forward="true" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/foldByKey/foldByKey.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,6 +114,7 @@
         <option value="$PROJECT_DIR$/src/main/java/reduce/simpleReduce.java" />
         <option value="$PROJECT_DIR$/src/main/java/combineByKey/ScoreDetail.java" />
         <option value="$PROJECT_DIR$/src/main/java/combineByKey/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/foldByKey/foldByKey.java" />
       </list>
     </option>
   </component>
@@ -113,8 +126,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="678" />
-    <option name="y" value="70" />
+    <option name="x" value="114" />
+    <option name="y" value="47" />
     <option name="width" value="1242" />
     <option name="height" value="1056" />
   </component>
@@ -157,7 +170,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="combineByKey" type="462c0819:PsiDirectoryNode" />
+              <item name="foldByKey" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spark" type="b2602c69:ProjectViewProjectNode" />
@@ -192,13 +205,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Application.foldByKey">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="combineByKey.Test" />
       <module name="spark" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="combineByKey.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="foldByKey" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="foldByKey.foldByKey" />
+      <module name="spark" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="foldByKey.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -232,19 +258,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="simpleMapPartition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mapPartition.simpleMapPartition" />
-      <module name="spark" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mapPartition.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="simpleReduce" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="reduce.simpleReduce" />
       <module name="spark" />
@@ -260,11 +273,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.foldByKey" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.simpleReduce" />
         <item itemvalue="Application.mapDouble" />
         <item itemvalue="Application.simpleFlatMap" />
-        <item itemvalue="Application.simpleMapPartition" />
       </list>
     </recent_temporary>
   </component>
@@ -285,18 +298,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564798562709</updated>
-      <workItem from="1564798564484" duration="6435000" />
+      <workItem from="1564798564484" duration="7213000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6435000" />
+    <option name="totallyTimeSpent" value="7213000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="678" y="70" width="1242" height="1056" extended-state="0" />
+    <frame x="114" y="47" width="1242" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17420435" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17420435" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -305,7 +318,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3697479" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3697479" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5293296" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -313,7 +326,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.12710084" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.20693277" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32959184" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32959184" />
@@ -453,8 +466,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/combineByKey/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="75" column="5" lean-forward="true" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
+        <state relative-caret-position="651">
+          <caret line="74" column="21" lean-forward="true" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/foldByKey/foldByKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

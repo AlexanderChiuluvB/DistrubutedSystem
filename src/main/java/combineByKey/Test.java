@@ -50,6 +50,7 @@ public class Test {
                 new Function<Integer, Tuple2>() {
                     @Override
                     public Tuple2<Integer, Integer> call(Integer score) throws Exception {
+                        //1是计数器
                         return new Tuple2<>(score, 1);
                     }
                 },
@@ -57,6 +58,7 @@ public class Test {
                 //这3个参数第一个是上一个function的返回值，第二个是最早的pairRDD的value，第三个是该函数的返回值类型
                 new Function2<Tuple2, Integer, Tuple2>() {
                     @Override
+                    //这里的v1是第一个函数的返回tuple,v1._1＝score,v1._2 = 计数
                     public Tuple2 call(Tuple2 v1, Integer score) throws Exception {
                         Tuple2<Integer,Integer>tuple2 = new Tuple2<>((int)v1._1+score,(int)v1._2+1);
                         System.out.println(tuple2);
@@ -64,6 +66,7 @@ public class Test {
                     }
                 },
 
+                //处理不同的分区合并
                 new Function2<Tuple2, Tuple2, Tuple2>() {
                     @Override
                     public Tuple2 call(Tuple2 v1, Tuple2 v2) throws Exception {
